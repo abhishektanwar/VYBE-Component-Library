@@ -1,0 +1,75 @@
+@import url('./vybe.css');
+:root{
+  --docSite-sec-color:#e6e6e6
+}
+
+.color-box{
+  height: 5rem;
+  width: 20rem;
+  margin: 4rem;
+}
+
+.bgPrimaryColor{
+  background-color: var(--primary-color)
+}
+.bgLightPrimaryColor{
+  background-color: var(--light-primary-color)
+}
+.bgDarkPrimaryColor{
+  background-color: var(--dark-primary-color)
+}
+.bgSecondaryColor{
+  color: var(--secondary-color)
+}
+
+.bgDarkSecondaryColor{
+  background-color: var(--secondary-color)
+}
+.textSecondaryTextColor{
+  color: var(--secondary-text-color)
+}
+.textDarkSecondaryTextColor{
+  color: var(--dark-secondary-text-color)
+}
+.SecondaryColor{
+  color: var(--secondary-color)
+}
+
+.DarkSecondaryColor{
+  color: var(--secondary-color)
+}
+
+/* --primary-color: #1EBAE2;
+--light-primary-color: #88C8D8;
+--dark-primary-color: #0184A9;
+
+--complimentary-text-color: white;
+
+--secondary-text-color: #696b79;
+--dark-secondary-text-color: #3f4049;
+--secondary-color: #eaeaec;
+--dark-secondary-color: #d8d8da; 
+--light-secondary-text-color: #282c3f;
+	--bg-color-primary: #fcfcfc;
+	--bg-color-primary-3: #3f3947;*/
+
+
+
+.nav-bar {
+  background-color: var(--bg-color-primary);
+  color: var(--light-secondary-text-color);
+}
+
+.shadow-box{
+  box-shadow: 0px 0px 1rem 0.4rem rgb(0 0 0 / 5%);
+}
+
+.shadow-bottom{
+  box-shadow: 0 0.4rem 1.2rem 0 rgb(0 0 0 / 5%);
+}
+
+.burger .line1,
+.burger .line2,
+.burger .line3 {
+	background-color: var(--secondary-text-color);
+}
