@@ -3,6 +3,8 @@
 @import url('./docsite.css');
 @import url('./typo.css');
 @import url('./lists.css');
+@import url('./alerts.css');
+@import url('./avatar.css');
 *{
   margin: 0;
 }

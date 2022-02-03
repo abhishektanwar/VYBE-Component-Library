@@ -24,75 +24,294 @@
   </head>
 
   <body>
-    <!-- HEADER NAV -->
-    <nav class="nav-bar shadow-box" id="my-nav-bar">
-      <div class="nav-section">
-        <!-- hamburger menu -->
-        <div class="burger nav-section-items">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+    <div class="grid-container-skleton">
+      <!-- HEADER NAV -->
+      <nav class="nav-bar shadow-box" id="my-nav-bar">
+        <div class="nav-section">
+          <!-- hamburger menu -->
+          <div class="burger nav-section-items">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+
+          <!-- LOGO -->
+          <div class="nav-logo nav-section-items">
+            <a class="link-no-style" href="./">
+              <div class="primary-text-color logo-title">VYBE UI</div>
+            </a>
+          </div>
+          <ul class="nav-bar-links list-style-none nav-section-items">
+            <li class="list-inline-item avatar-in-nav-links">
+              <div class="primary-text-color logo-title">VYBE UI</div>
+            </li>
+            <li class="list-inline-item">
+              <a href="" class="link-no-style nav-section-link">HOME</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="" class="link-no-style nav-section-link"
+                >DOCUMENTATION</a
+              >
+            </li>
+            <!-- <li></li> -->
+          </ul>
         </div>
 
-        <!-- LOGO -->
-        <div class="nav-logo nav-section-items">
-          <a class="link-no-style" href="./">
-            <div class="primary-text-color logo-title">VYBE UI</div>
-          </a>
+        <!-- RIGHT SIDE NAV -->
+        <div class="nav-section right-nav-section">
+          <ul class="nav-icons list-style-none nav-section-item-width50pc">
+            <li class="list-inline-item">
+              <a href="" class="nav-icon-link link-no-style">
+                <span class="nav-icon">
+                  <i class="fab fa-github font-size-24" aria-hidden="true"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="" class="nav-icon-link">
+                <span class="nav-icon">
+                  <i class="fab fa-twitter font-size-24" aria-hidden="true"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="" class="nav-icon-link">
+                <span class="nav-icon">
+                  <i
+                    class="fab fa-linkedin font-size-24"
+                    aria-hidden="true"
+                  ></i>
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="nav-bar-links list-style-none nav-section-items">
-          <li class="list-inline-item avatar-in-nav-links">
-            <div class="primary-text-color logo-title">VYBE UI</div>
-          </li>
-          <li class="list-inline-item">
-            <a href="" class="link-no-style nav-section-link">HOME</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="" class="link-no-style nav-section-link">DOCUMENTATION</a>
-          </li>
-          <!-- <li></li> -->
+      </nav>
+
+      <!-- SIDEBAR -->
+      <div class="sidebar grid-item shadow-bottom" id="my-side-bar">
+        <div class="sidebar-toggle-button">
+          <h2 class="typo-sm sidebar-title">Components</h2>
+          <span class="sidebar-toggle-down-arrow"
+            ><i class="typo-sm fas fa-chevron-down"></i
+          ></span>
+        </div>
+        <ul class="nav-links">
+          <li class="nav-link-item font-size-16"><a href="">Alert</a></li>
+          <li class="nav-link-item font-size-16"><a href="">Avatar</a></li>
+          <li class="nav-link-item font-size-16"><a href="">Badge</a></li>
+          <li class="nav-link-item font-size-16"><a href="">Button</a></li>
+          <li class="nav-link-item font-size-16"><a href="">Cards</a></li>
+          <li class="nav-link-item font-size-16"><a href="">Image</a></li>
+          <li class="nav-link-item font-size-16"><a href="">Input</a></li>
         </ul>
       </div>
+      <section class="main grid-item">
+        <div id="Alerts">
+          <!-- short description here about Alerts and classes used in this component -->
+          <div>
+            <h1>Alerts</h1>
+            <p class="typo-sm text-light-weight">
+              Provide contextual feedback messages for typical user actions with
+              the handful of available and flexible alert messages.
+            </p>
+          </div>
+          <h4>Examples of Alert without close button.</h4>
+          <p class="typo-xs">
+            Alerts are available for any length of text, as well as an optional
+            dismiss button.Alerts are available in five different variants
+            (primary,success,danger,warning,secondary) For proper styling, use
+            one of the five required contextual classes (e.g.,
+            <span class="textDarkPrimaryColor">.success-alert</span>).
+          </p>
+          <div class="component-example-container flex-column shadow-bottom">
+            <!-- example container div ^ -->
+            <div class="alert-container primary-alert">
+              A primary alert example.
+            </div>
+            <div class="alert-container secondary-alert">
+              A secondary alert example.
+            </div>
+            <div class="alert-container success-alert">
+              <span class="icon-alert"
+                ><i class="fas fa-check-circle"></i
+              ></span>
+              A success alert example.
+            </div>
+            <div class="alert-container danger-alert">
+              <span class="icon-alert"
+                ><i class="fas fa-exclamation-triangle"></i>
+              </span>
+              A danger alert example.
+            </div>
+            <div class="alert-container warning-alert">
+              <span class="icon-alert"
+                ><i class="fas fa-exclamation-circle"></i>
+              </span>
+              A warning alert example.
+            </div>
+          </div>
+          <div class="component-code-snippet-container">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cdiv%2520class%253D%2522alert-container%2520primary-alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520primary%2520alert%2520example.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-container%2520secondary-alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520secondary%2520alert%2520example.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-container%2520success-alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-alert%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520success%2520alert%2520example.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-container%2520danger-alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-alert%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520danger%2520alert%2520example.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-container%2520warning-alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-alert%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520warning%2520alert%2520example.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
 
-      <!-- RIGHT SIDE NAV -->
-      <div class="nav-section right-nav-section">
-        <ul class="nav-icons list-style-none nav-section-item-width50pc">
-          <li class="list-inline-item">
-            <a href="" class="nav-icon-link link-no-style">
-              <span class="nav-icon">
-                <i class="fab fa-github font-size-24" aria-hidden="true"></i>
-              </span>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="" class="nav-icon-link">
-              <span class="nav-icon">
-                <i class="fab fa-twitter font-size-24" aria-hidden="true"></i>
-              </span>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="" class="nav-icon-link">
-              <span class="nav-icon">
-                <i class="fab fa-linkedin font-size-24" aria-hidden="true"></i>
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+          <!-- close alert intro here -->
+          <h4>Example of Alert with close button.</h4>
+          <p class="typo-xs">Alerts can have a button to dismiss the alert.</p>
+          <div class="component-example-container flex-column shadow-bottom">
+            <div
+              class="alert-container warning-alert"
+              id="alert-container-close"
+            >
+              <span class="icon-alert"
+                ><i class="fas fa-exclamation-circle"></i
+              ></span>
+              A warning alert example with close button.
+              <button
+                type="button"
+                class="btn-close"
+                id="alert-container-close-btn"
+              >
+                <span class="icon-alert warning-alert"
+                  ><i class="fas fa-times"></i
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div class="component-code-snippet-container">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%2509%253Cdiv%2520class%253D%2522alert-container%2520warning-alert%2522%2520id%253D%2522alert-container-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-alert%2522%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509A%2520warning%2520alert%2520example%2520with%2520close%2520button.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn-close%2522%2520id%253D%2522alert-container-close-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-alert%2520warning-alert%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+          <h5>JavaScript code</h5>
+          <div class="component-code-snippet-container">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%2509%2520%2520const%2520alertContainerBox%2520%253D%2520document.querySelector%28%27%2523alert-container-close%27%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520const%2520alertContainerCloseBtn%2520%253D%2520document.querySelector%28%27%2523alert-container-close-btn%27%29%253B%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alertContainerCloseBtn.addEventListener%28%27click%27%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alertContainerBox.style.display%2520%253D%2520%27none%27%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520setTimeout%28%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alertContainerBox.style.display%2520%253D%2520%27block%27%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%252C%25203000%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%29%253B%250A"
+                style="border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
 
-    <!-- SIDEBAR -->
-    <div class="sidebar grid-item shadow-bottom">
-      <div class="sidebar-toggle-button">
-        <h2 class="h5 sidebar-title">Components</h2>
-        <span>
-          <i></i>
-        </span>
-      </div>
-      <ul class="nav-links">
-        <li class="nav-link-item font-size-16"><a href="">Alerts</a></li>
-      </ul>
+        <hr />
+
+        <!-- AVATARS -->
+        <div id="Avatar">
+          <div>
+            <h1>Avatars</h1>
+            <p class="typo-sm text-light-weight">
+              Avatars are used to show profile picture of user on edit-profile
+              page,user settings, user details.
+            </p>
+          </div>
+          <h4>Examples of Image Avatar.</h4>
+          <p class="typo-xs">
+            Avatars with image are available in four different variants based on
+            size
+            <span class="textDarkPrimaryColor"
+              >large, medium, small, extra-small</span
+            >
+            (e.g., <span class="textDarkPrimaryColor">.avatar-lg</span>).
+          </p>
+          <div class="component-example-container">
+            <div class="avatar avatar-xs margin-trb-16">
+              <img
+                src="./assets/images/sample1.jpg"
+                alt="avatar"
+                loading="lazy"
+                class="responsive-img circular-img"
+              />
+            </div>
+            <div class="avatar avatar-sm margin-trb-16">
+              <img
+                src="./assets/images/sample2.jpg"
+                alt="avatar"
+                loading="lazy"
+                class="responsive-img circular-img"
+              />
+            </div>
+            <div class="avatar avatar-md margin-trb-16">
+              <img
+                src="./assets/images/sample3.jpg"
+                alt="avatar"
+                loading="lazy"
+                class="responsive-img circular-img"
+              />
+            </div>
+            <div class="avatar avatar-lg margin-trb-16">
+              <img
+                src="./assets/images/sample2.jpg"
+                alt="avatar"
+                loading="lazy"
+                class="responsive-img circular-img"
+              />
+            </div>
+          </div>
+          <div class="component-code-snippet-container">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%2509%253Cdiv%2520class%253D%2522component-example-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2520margin-trb-16%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252Fimages%252Fsample1.jpg%2522%2520alt%253D%2522avatar%2522%2520loading%253D%2522lazy%2522%2520class%253D%2522responsive-img%2520%2509%2509%2509%2509%2509%2509circular-img%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2520margin-trb-16%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252Fimages%252Fsample2.jpg%2522%2520alt%253D%2522avatar%2522%2520loading%253D%2522lazy%2522%2520class%253D%2522responsive-img%2520%2509%2509%2509%2509%2509%2509circular-img%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2520margin-trb-16%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252Fimages%252Fsample3.jpg%2522%2520alt%253D%2522avatar%2522%2520loading%253D%2522lazy%2522%2520class%253D%2522responsive-img%2520%2509%2509%2509%2509%2509%2509circular-img%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2520margin-trb-16%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252Fimages%252Fsample2.jpg%2522%2520alt%253D%2522avatar%2522%2520loading%253D%2522lazy%2522%2520class%253D%2522responsive-img%2520%2509%2509%2509%2509%2509%2509circular-img%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+          <!-- text avatars -->
+          <h4>Examples of Text Avatar.</h4>
+          <p class="typo-xs">
+            Avatars with text are available in four different variants based on
+            size
+            <span class="textDarkPrimaryColor"
+              >large, medium, small, extra-small</span
+            >. Use <span class="textDarkPrimaryColor">avatar-text</span> class
+            here. (e.g., <span class="textDarkPrimaryColor">.avatar-lg</span>).
+          </p>
+          <div class="component-example-container flex-align-item-end">
+            <div class="avatar avatar-xs avatar-text" role="img" alt="avatar">
+              AT
+            </div>
+            <div class="avatar avatar-sm avatar-text" role="img" alt="avatar">
+              AT
+            </div>
+            <div class="avatar avatar-md avatar-text" role="img" alt="avatar">
+              AT
+            </div>
+            <div class="avatar avatar-lg avatar-text" role="img" alt="avatar">
+              AT
+            </div>
+          </div>
+          <div class="component-code-snippet-container">
+            <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%2509%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2520avatar-text%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520AT%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2520avatar-text%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520AT%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2520avatar-text%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520AT%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2520avatar-text%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520AT%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          </div>
+        </div>
+
+        <hr />
+      </section>
     </div>
+    <script src="./components.js"></script>
+    <script src="./docsite.js"></script>
   </body>
 </html>
