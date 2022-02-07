@@ -11,6 +11,20 @@
   justify-content: center;
 }
 
+.badge{
+  padding: 0.4rem 1.05rem;
+  color: var(--secondary-color);
+  font-size: 1.2em;
+  line-height: 1;
+  text-align: center;
+  border-radius:3px ;
+  opacity: 0.8;
+}
+
+.primary-card-badge{
+  background-color: var(--dark-primary-color);
+}
+
 .badge-status-online{
   background-color: var(--success-dark-color);
 }

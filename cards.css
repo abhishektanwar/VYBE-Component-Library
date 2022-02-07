@@ -1,0 +1,57 @@
+.horizontal-card{
+  border-radius: 0.48rem;
+  color: rgb(51, 48, 49);
+  box-sizing: border-box;
+  display: flex;
+}
+
+.vertical-card{
+  max-width: 220px;
+  width: 100%;
+  position: relative;
+}
+
+.horizontal-card .image-container{
+  width: 120px;
+  height: 150px;
+}
+
+.card-text-container{
+  padding: 0.6rem 1.6rem;
+  flex-grow: 1;
+}
+
+.horizontal-card.default-container .card-text-container{
+  margin-top: 4px;
+}
+
+.horizontal-card .text-container{
+  width: calc(100% - 111px);
+}
+
+.card-text-container h1, .card-text-container h2, .card-text-container h3, .card-text-container h4, .card-text-container h5, .card-text-container h6,.card-text-container p{
+  margin: 0px;
+  margin-bottom: 4px;
+}
+
+.text-container-description{
+  flex-grow: 1;
+  margin-top: 1rem;
+}
+
+/* badge */
+.image-container .badge{
+  position: absolute;
+  top: 1.6rem;
+  left: 0rem;
+}
+
+.image-container.default-container .badge{
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+}
+.default-container .image-container{
+  margin: 0.6rem 0 0 0.6rem
+}
+

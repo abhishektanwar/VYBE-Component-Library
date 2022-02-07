@@ -6,6 +6,7 @@
 @import url('./alerts.css');
 @import url('./avatar.css');
 @import url('./badge.css');
+@import url('./cards.css');
 *{
   margin: 0;
 }
