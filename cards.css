@@ -46,6 +46,14 @@
   left: 0rem;
 }
 
+.image-container .dismiss{
+  position: absolute;
+  top: 1.6rem;
+  right: 1rem;
+  border: none;
+  opacity:0.8 ;
+}
+
 .image-container.default-container .badge{
   position: absolute;
   top: 0rem;
@@ -53,5 +61,27 @@
 }
 .default-container .image-container{
   margin: 0.6rem 0 0 0.6rem
+}
+
+.overlay-container{
+  opacity: 0.8;
+  flex-grow: 1;
+}
+
+.overlaying-component {
+  position: absolute;
+  top: 0rem;
+  left:0;
+  right:0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(234, 234, 236,0.6);
+}
+
+.overlaying-component .text-container{
+  background-color: white;
 }
 
