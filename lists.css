@@ -10,3 +10,59 @@
 .list-style-none.list-container{
   padding-inline-start: 3.2rem;
 }
+
+.list-container{
+  border-radius: 0.3rem;
+  background-color: #f7f5f5;
+  padding: 1rem 32px 1rem 40px;
+}
+
+.list-style-square{
+  list-style-type: square;
+}
+
+.list-style-circle{
+  list-style-type: circle;
+}
+
+.list-style-lowercase-alpha{
+  list-style-type:lower-alpha;
+}
+.list-style-uppercase-alpha{
+  list-style-type:upper-alpha;
+}
+.list-style-lowercase-roman{
+  list-style-type:lower-roman;
+}
+.list-style-uppercase-roman{
+  list-style-type:upper-roman;
+}
+
+.stacked-notification-list{
+  width: 70%;
+  border-radius: 0.3rem;
+  background-color: #f7f5f5;
+}
+.component-example-container .stacked-notification-list{
+  justify-content: center;
+}
+
+.stacked-notification-list-item{
+  border: 1px solid rgba(153, 151, 151, 0.938);
+  border-radius: 3px;
+  background-color: var(--bg-color-primary);
+}
+
+.stacked-notification-list-item span{
+  width: 3rem;
+  margin-right: 1.6rem;
+  justify-content: center;
+}
+
+.stacked-notification-list-item div{
+  width: 100%;
+}
+
+.stacked-notification-container{
+  width: 100%;
+}
