@@ -67,6 +67,11 @@
   width: 100%;
 }
 
+.img-responsive{
+  height: 100%;
+  width: auto;
+}
+
 .circular-img{
   border-radius: 50%;
 }
