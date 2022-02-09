@@ -1,0 +1,22 @@
+.grid-2-column-layout{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-column-layout{
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:2.3rem;
+    width: 100%;
+    max-width: 65rem;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 480px){
+    .grid-3-column-layout{
+        grid-template-columns: 1fr;
+    }
+    .grid-2-column-layout{
+        grid-template-columns: 1fr;
+    }
+}

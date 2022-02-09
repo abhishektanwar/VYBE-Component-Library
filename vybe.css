@@ -9,6 +9,9 @@
 @import url('./cards.css');
 @import url('./input-forms.css');
 @import url('./ratings.css');
+@import url('./modal.css');
+@import url('./toast.css');
+@import url('./grids.css');
 *{
   margin: 0;
 }

@@ -73,6 +73,14 @@
   bottom: 0.8rem;
 }
 
+.list-inline-item .nav-icon-link{
+  display: flex;
+}
+
+.list-inline-item button{
+  margin-top: 1rem;
+}
+
 @media screen and (max-width:1024px) {
   .nav-logo{
     display: none;
