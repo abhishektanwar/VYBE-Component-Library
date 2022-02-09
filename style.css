@@ -79,6 +79,9 @@
   border-radius: 50%;
 }
 
+.margin-top-60{
+  margin-top: 6rem;
+}
 
 /* margins and paddings global */
 .margin-trb-16{
@@ -96,20 +99,6 @@
 .mb-2{
   margin-bottom: 2rem;
 }
-
-/* --primary-color: #1EBAE2;
---light-primary-color: #88C8D8;
---dark-primary-color: #0184A9;
-
---complimentary-text-color: white;
-
---secondary-text-color: #696b79;
---dark-secondary-text-color: #3f4049;
---secondary-color: #eaeaec;
---dark-secondary-color: #d8d8da; 
---light-secondary-text-color: #282c3f;
-	--bg-color-primary: #fcfcfc;
-	--bg-color-primary-3: #3f3947;*/
 
 /* GRID SKLETON COMPONENTS PAGE */
 
@@ -166,5 +155,6 @@
       'sidebar' 
       'main';
     width: 100%;
+    overflow-x: hidden;
   }
 }
