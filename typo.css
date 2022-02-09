@@ -2,29 +2,59 @@
   color: var(--primary-color);
 }
 
+.secondary-text-color{
+  color: var(--secondary-text-color);
+}
+
+
 h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6{
   margin: 1rem 0;
   line-height: 1.2em;
   font-weight: 500;
 }
 
-.h1, h1{
+.typo-xlg, h1{
   font-size: 4.8rem;
 }
-.h2, h2{
+.typo-lg, h2{
   font-size: 3.84rem;
 }
-.h3, h3{
+.typo-mdlg, h3{
   font-size: 3.2rem;
 }
-.h4, h4{
+.typo-md, h4{
   font-size: 2.8rem;
 }
-.h5, h5{
+.typo-sm, h5{
   font-size: 2.4rem;
 }
-.h6, h6{
+.typo-xs, h6{
   font-size: 2rem;
+}
+
+.body-typo-md{
+  font-size: 1.6rem;
+}
+
+.body-typo-sm{
+  font-size: 1.3rem;
+}
+
+.body-typo-xs{
+  font-size: 1.1rem;
+}
+/* weights */
+
+.text-light-weight{
+  font-weight: 300;
+}
+
+.text-medium-weight{
+  font-weight: 500;
+}
+
+.text-bold-weight{
+  font-weight: 700;
 }
 
 
@@ -42,3 +72,22 @@ h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6{
     font-size: 2rem;
   }
 }
+
+/* text decorations */
+.typo-strike-through{
+  text-decoration: line-through;
+}
+
+.favorite-btn{
+  margin-left: auto;
+  font-size: 1.9rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  opacity: 0.7;
+}
+

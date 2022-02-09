@@ -3,6 +3,12 @@
 @import url('./docsite.css');
 @import url('./typo.css');
 @import url('./lists.css');
+@import url('./alerts.css');
+@import url('./avatar.css');
+@import url('./badge.css');
+@import url('./cards.css');
+@import url('./input-forms.css');
+@import url('./ratings.css');
 *{
   margin: 0;
 }
@@ -18,20 +24,32 @@ html{
 	--complimentary-text-color: white;
 
 	--secondary-text-color: #696b79;
-	--dark-secondary-text-color: #3f4049;
+	--dark-secondary-text-color: #29292ce7;
 	--secondary-color: #eaeaec;
 	--dark-secondary-color: #d8d8da;
   --light-secondary-text-color: #282c3f;
-	--bg-color-primary: #f4f9fce1;
-	--bg-color-primary-3: #3f3947;
-	--inactive-color: rgb(191, 192, 198);
+  
+  --bg-color-primary: #f4f9fce1;
+  --bg-color-primary-3: #3f3947;
+  --inactive-color: rgb(191, 192, 198);
   --body-text-color:#3e4152;
-	--z-index-1: 1;
+  --label-color:#000000bc;
+	--field-required-color:#a7303c;
+  --z-index-1: 1;
 	--z-index-2: 2;
 	--z-index-3: 3;
 	--z-index-4: 4;
 	--z-index-5: 5;
 	--z-index-6: 6;
+	--danger-dark-color:#721c24;
+	--danger-light-color:#f8d7da;
+	--danger-border-color:#f5c6cb;
+	--success-dark-color:#155724;
+	--success-light-color:#d4edda;
+	--success-border-color:#c3e6cb;
+	--warning-dark-color:#856404;
+	--warning-light-color:#fff3cd;
+	--warning-border-color:#ffeeba;
 
 }
 body{
