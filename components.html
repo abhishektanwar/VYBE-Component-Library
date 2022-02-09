@@ -1,98 +1,722 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Recursive:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <!-- HEADER NAV -->
-    <nav class="nav-bar shadow-box" id="my-nav-bar">
-      <div class="nav-section">
-        <!-- hamburger menu -->
-        <div class="burger nav-section-items">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Recursive:wght@400;500&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+		crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
 
-        <!-- LOGO -->
-        <div class="nav-logo nav-section-items">
-          <a class="link-no-style" href="./">
-            <div class="primary-text-color logo-title">VYBE UI</div>
-          </a>
-        </div>
-        <ul class="nav-bar-links list-style-none nav-section-items">
-          <li class="list-inline-item avatar-in-nav-links">
-            <div class="primary-text-color logo-title">VYBE UI</div>
-          </li>
-          <li class="list-inline-item">
-            <a href="" class="link-no-style nav-section-link">HOME</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="" class="link-no-style nav-section-link">DOCUMENTATION</a>
-          </li>
-          <!-- <li></li> -->
-        </ul>
-      </div>
+<body>
+	<div class="grid-container-skleton">
+		<!-- HEADER NAV -->
+		<nav class="nav-bar shadow-box" id="my-nav-bar">
+			<div class="nav-section">
+				<!-- hamburger menu -->
+				<div class="burger nav-section-items">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
 
-      <!-- RIGHT SIDE NAV -->
-      <div class="nav-section right-nav-section">
-        <ul class="nav-icons list-style-none nav-section-item-width50pc">
-          <li class="list-inline-item">
-            <a href="" class="nav-icon-link link-no-style">
-              <span class="nav-icon">
-                <i class="fab fa-github font-size-24" aria-hidden="true"></i>
-              </span>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="" class="nav-icon-link">
-              <span class="nav-icon">
-                <i class="fab fa-twitter font-size-24" aria-hidden="true"></i>
-              </span>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="" class="nav-icon-link">
-              <span class="nav-icon">
-                <i class="fab fa-linkedin font-size-24" aria-hidden="true"></i>
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+				<!-- LOGO -->
+				<div class="nav-logo nav-section-items">
+					<a class="link-no-style" href="./">
+						<div class="primary-text-color logo-title">VYBE UI</div>
+					</a>
+				</div>
+				<ul class="nav-bar-links list-style-none nav-section-items">
+					<li class="list-inline-item avatar-in-nav-links">
+						<div class="primary-text-color logo-title">VYBE UI</div>
+					</li>
+					<li class="list-inline-item">
+						<a href="" class="link-no-style nav-section-link">HOME</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="" class="link-no-style nav-section-link">DOCUMENTATION</a>
+					</li>
+					<!-- <li></li> -->
+				</ul>
+			</div>
 
-    <!-- SIDEBAR -->
-    <div class="sidebar grid-item shadow-bottom">
-      <div class="sidebar-toggle-button">
-        <h2 class="h5 sidebar-title">Components</h2>
-        <span>
-          <i></i>
-        </span>
-      </div>
-      <ul class="nav-links">
-        <li class="nav-link-item font-size-16"><a href="">Alerts</a></li>
-      </ul>
-    </div>
-  </body>
+			<!-- RIGHT SIDE NAV -->
+			<div class="nav-section right-nav-section">
+				<ul class="nav-icons list-style-none nav-section-item-width50pc">
+					<li class="list-inline-item">
+						<a href="" class="nav-icon-link link-no-style">
+							<span class="nav-icon">
+								<i class="fab fa-github font-size-24" aria-hidden="true"></i>
+							</span>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="" class="nav-icon-link">
+							<span class="nav-icon">
+								<i class="fab fa-twitter font-size-24" aria-hidden="true"></i>
+							</span>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="" class="nav-icon-link">
+							<span class="nav-icon">
+								<i class="fab fa-linkedin font-size-24" aria-hidden="true"></i>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- SIDEBAR -->
+		<div class="sidebar grid-item shadow-bottom" id="my-side-bar">
+			<div class="sidebar-toggle-button">
+				<h2 class="typo-sm sidebar-title">Components</h2>
+				<span class="sidebar-toggle-down-arrow"><i class="typo-sm fas fa-chevron-down"></i></span>
+			</div>
+			<ul class="nav-links">
+				<li class="nav-link-item font-size-16"><a href="#Alerts">Alert</a></li>
+          <li class="nav-link-item font-size-16"><a href="#Avatar">Avatar</a></li>
+          <li class="nav-link-item font-size-16"><a href="#badge">Badge</a></li>
+          <li class="nav-link-item font-size-16"><a href="#buttons">Button</a></li>
+          <li class="nav-link-item font-size-16"><a href="#cards">Cards</a></li>
+          <li class="nav-link-item font-size-16"><a href="#forms">Input</a></li>
+          <li class="nav-link-item font-size-16"><a href="#responsive-images">Image</a></li>
+          
+			</ul>
+		</div>
+		<section class="main grid-item">
+			<div id="Alerts">
+				<!-- short description here about Alerts and classes used in this component -->
+				<div>
+					<h1>Alerts</h1>
+					<p class="typo-sm text-light-weight">
+						Provide contextual feedback messages for typical user actions with
+						the handful of available and flexible alert messages.
+					</p>
+				</div>
+				<h4>Examples of Alert without close button.</h4>
+				<p class="typo-xs">
+					Alerts are available for any length of text, as well as an optional
+					dismiss button.Alerts are available in five different variants
+					(primary,success,danger,warning,secondary) For proper styling, use
+					one of the five required contextual classes (e.g.,
+					<span class="textDarkPrimaryColor">.success-alert</span>).
+				</p>
+				<div class="component-example-container flex-column shadow-bottom">
+					<!-- example container div ^ -->
+					<div class="alert-container primary-alert">
+						A primary alert example.
+					</div>
+					<div class="alert-container secondary-alert">
+						A secondary alert example.
+					</div>
+					<div class="alert-container success-alert">
+						<span class="icon-alert"><i class="fas fa-check-circle"></i></span>
+						A success alert example.
+					</div>
+					<div class="alert-container danger-alert">
+						<span class="icon-alert"><i class="fas fa-exclamation-triangle"></i>
+						</span>
+						A danger alert example.
+					</div>
+					<div class="alert-container warning-alert">
+						<span class="icon-alert"><i class="fas fa-exclamation-circle"></i>
+						</span>
+						A warning alert example.
+					</div>
+				</div>
+				<div class="component-code-snippet-container">
+					<code>
+							<iframe
+								src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cdiv%2520class%253D%2522alert-container%2520primary-alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520primary%2520alert%2520example.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-container%2520secondary-alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520secondary%2520alert%2520example.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-container%2520success-alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-alert%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520success%2520alert%2520example.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-container%2520danger-alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-alert%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520danger%2520alert%2520example.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-container%2520warning-alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-alert%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520warning%2520alert%2520example.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+								style="border: 0; transform: scale(1); overflow: hidden"
+								sandbox="allow-scripts allow-same-origin"
+							>
+							</iframe>
+						</code>
+				</div>
+
+				<!-- close alert intro here -->
+				<h4>Example of Alert with close button.</h4>
+				<p class="typo-xs">Alerts can have a button to dismiss the alert.</p>
+				<div class="component-example-container flex-column shadow-bottom">
+					<div class="alert-container warning-alert" id="alert-container-close">
+						<span class="icon-alert"><i class="fas fa-exclamation-circle"></i></span>
+						A warning alert example with close button.
+						<button type="button" class="btn-close" id="alert-container-close-btn">
+							<span class="icon-alert warning-alert"><i class="fas fa-times"></i></span>
+						</button>
+					</div>
+				</div>
+				<div class="component-code-snippet-container">
+					<code>
+							<iframe
+								src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%2509%253Cdiv%2520class%253D%2522alert-container%2520warning-alert%2522%2520id%253D%2522alert-container-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-alert%2522%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509A%2520warning%2520alert%2520example%2520with%2520close%2520button.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn-close%2522%2520id%253D%2522alert-container-close-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-alert%2520warning-alert%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+								style="border: 0; transform: scale(1); overflow: hidden"
+								sandbox="allow-scripts allow-same-origin"
+							>
+							</iframe>
+						</code>
+				</div>
+				<h5>JavaScript code</h5>
+				<div class="component-code-snippet-container">
+					<code>
+							<iframe
+								src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%2509%2520%2520const%2520alertContainerBox%2520%253D%2520document.querySelector%28%27%2523alert-container-close%27%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520const%2520alertContainerCloseBtn%2520%253D%2520document.querySelector%28%27%2523alert-container-close-btn%27%29%253B%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alertContainerCloseBtn.addEventListener%28%27click%27%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alertContainerBox.style.display%2520%253D%2520%27none%27%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520setTimeout%28%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alertContainerBox.style.display%2520%253D%2520%27block%27%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%252C%25203000%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%29%253B%250A"
+								style="border: 0; transform: scale(1); overflow: hidden"
+								sandbox="allow-scripts allow-same-origin"
+							>
+							</iframe>
+						</code>
+				</div>
+			</div>
+
+			<hr />
+
+			<!-- AVATARS -->
+			<div id="Avatar">
+				<div>
+					<h1>Avatars</h1>
+					<p class="typo-sm text-light-weight">
+						Avatars are used to show profile picture of user on edit-profile
+						page,user settings, user details.
+					</p>
+				</div>
+				<h4>Examples of Image Avatar.</h4>
+				<p class="typo-xs">
+					Avatars with image are available in four different variants based on
+					size
+					<span class="textDarkPrimaryColor">large, medium, small, extra-small</span>
+					(e.g., <span class="textDarkPrimaryColor">.avatar-lg</span>).
+				</p>
+				<div class="component-example-container">
+					<div class="avatar avatar-xs margin-trb-16">
+						<img src="./assets/images/sample1.jpg" alt="avatar" loading="lazy" class="responsive-img circular-img" />
+					</div>
+					<div class="avatar avatar-sm margin-trb-16">
+						<img src="./assets/images/sample2.jpg" alt="avatar" loading="lazy" class="responsive-img circular-img" />
+					</div>
+					<div class="avatar avatar-md margin-trb-16">
+						<img src="./assets/images/sample3.jpg" alt="avatar" loading="lazy" class="responsive-img circular-img" />
+					</div>
+					<div class="avatar avatar-lg margin-trb-16">
+						<img src="./assets/images/sample2.jpg" alt="avatar" loading="lazy" class="responsive-img circular-img" />
+					</div>
+				</div>
+				<div class="component-code-snippet-container">
+					<code>
+							<iframe
+								src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%2509%253Cdiv%2520class%253D%2522component-example-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2520margin-trb-16%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252Fimages%252Fsample1.jpg%2522%2520alt%253D%2522avatar%2522%2520loading%253D%2522lazy%2522%2520class%253D%2522responsive-img%2520%2509%2509%2509%2509%2509%2509circular-img%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2520margin-trb-16%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252Fimages%252Fsample2.jpg%2522%2520alt%253D%2522avatar%2522%2520loading%253D%2522lazy%2522%2520class%253D%2522responsive-img%2520%2509%2509%2509%2509%2509%2509circular-img%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2520margin-trb-16%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252Fimages%252Fsample3.jpg%2522%2520alt%253D%2522avatar%2522%2520loading%253D%2522lazy%2522%2520class%253D%2522responsive-img%2520%2509%2509%2509%2509%2509%2509circular-img%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2520margin-trb-16%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252Fimages%252Fsample2.jpg%2522%2520alt%253D%2522avatar%2522%2520loading%253D%2522lazy%2522%2520class%253D%2522responsive-img%2520%2509%2509%2509%2509%2509%2509circular-img%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+								style="border: 0; transform: scale(1); overflow: hidden"
+								sandbox="allow-scripts allow-same-origin"
+							>
+							</iframe>
+						</code>
+				</div>
+				<!-- text avatars -->
+				<h4>Examples of Text Avatar.</h4>
+				<p class="typo-xs">
+					Avatars with text are available in four different variants based on
+					size
+					<span class="textDarkPrimaryColor">large, medium, small, extra-small</span>. Use <span
+						class="textDarkPrimaryColor">avatar-text</span> class
+					here. (e.g., <span class="textDarkPrimaryColor">.avatar-lg</span>).
+				</p>
+				<div class="component-example-container flex-align-item-end">
+					<div class="avatar avatar-xs avatar-text" role="img" alt="avatar">
+						AT
+					</div>
+					<div class="avatar avatar-sm avatar-text" role="img" alt="avatar">
+						AT
+					</div>
+					<div class="avatar avatar-md avatar-text" role="img" alt="avatar">
+						AT
+					</div>
+					<div class="avatar avatar-lg avatar-text" role="img" alt="avatar">
+						AT
+					</div>
+				</div>
+				<div class="component-code-snippet-container">
+					<code>
+							<iframe
+								src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%2509%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2520avatar-text%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520AT%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2520avatar-text%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520AT%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2520avatar-text%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520AT%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2520avatar-text%2522%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520AT%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+								style="border: 0; transform: scale(1); overflow: hidden"
+								sandbox="allow-scripts allow-same-origin"
+							>
+							</iframe>
+						</code>
+				</div>
+			</div>
+
+			<hr />
+
+			<!-- badge -->
+			<div id="badge">
+				<div>
+					<h1>Badges</h1>
+					<p class="typo-sm text-light-weight">
+						Badges are used to display information like notification count or
+						online / offline status and can have different shapes like with
+						icons or pill shape
+					</p>
+				</div>
+				<h4>Examples of Status Badge.</h4>
+				<p class="typo-xs">
+					Badges on avatars can be used to show information if the user is
+					online or offline.
+				</p>
+				<!-- badge description here -->
+				<div class="component-example-container">
+					<div class="margin-trb-16">
+						<div class="badge-container">
+							<div class="avatar avatar-lg margin-trb-16">
+								<img src="./assets/images/sample2.jpg" loading="lazy" alt="avatar"
+									class="responsive-img circular-img" />
+							</div>
+							<span class="badge-status-default badge-status-online"></span>
+						</div>
+					</div>
+					<div class="margin-trb-16">
+						<div class="badge-container">
+							<div class="avatar avatar-md margin-trb-16">
+								<img src="./assets/images/sample1.jpg" loading="lazy" alt="avatar"
+									class="responsive-img circular-img" />
+							</div>
+							<span class="badge-status-default badge-status-offline"></span>
+						</div>
+					</div>
+					<div class="margin-trb-16">
+						<div class="badge-container">
+							<div class="avatar avatar-sm margin-trb-16">
+								<img src="./assets/images/sample3.jpg" loading="lazy" alt="avatar"
+									class="responsive-img circular-img" />
+							</div>
+							<span class="badge-status-default badge-status-away"></span>
+						</div>
+					</div>
+					<div class="margin-trb-16">
+						<div class="badge-container">
+							<div class="avatar avatar-xs margin-trb-16">
+								<img src="./assets/images/sample3.jpg" loading="lazy" alt="avatar"
+									class="responsive-img circular-img" />
+							</div>
+							<span class="badge-status-default badge-status-online"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="component-code-snippet-container">
+				<code>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cdiv%2520class%253D%2522margin-trb-16%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2520margin-trb-16%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252Fassets%252Fimages%252Fsample2.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522responsive-img%2520circular-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-status-default%2520badge-status-online%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522margin-trb-16%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2520margin-trb-16%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252Fassets%252Fimages%252Fsample1.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522responsive-img%2520circular-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-status-default%2520badge-status-offline%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522margin-trb-16%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2520margin-trb-16%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252Fassets%252Fimages%252Fsample3.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522responsive-img%2520circular-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-status-default%2520badge-status-away%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522margin-trb-16%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2520margin-trb-16%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252Fassets%252Fimages%252Fsample3.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522responsive-img%2520circular-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-status-default%2520badge-status-online%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+							style="border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</code>
+			</div>
+
+			<h4>Examples of Notification Badge.</h4>
+			<p class="typo-xs">
+				Badges can also be used to display number of notification or number of
+				items in cart.
+
+				<!-- example of badge on icons -->
+			</p>
+
+			<div class="component-example-container">
+				<div class="margin-trb-16">
+					<span class="badge-icon badge-container">
+						<i class="fas fa-bell"></i>
+						<span class="badge-status-default badge-status-number">2</span>
+					</span>
+				</div>
+				<div class="margin-trb-16">
+					<span class="badge-icon badge-container">
+						<i class="fas fa-shopping-cart"></i>
+						<span class="badge-status-default badge-status-number">4</span>
+					</span>
+				</div>
+			</div>
+			<div class="component-code-snippet-container">
+				<code>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%2509%2520%2520%253Cdiv%2520class%253D%2522margin-trb-16%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-icon%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bell%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-status-default%2520badge-status-number%2522%253E2%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522margin-trb-16%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-icon%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-status-default%2520badge-status-number%2522%253E4%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+							style="border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</code>
+			</div>
+
+			<!-- BUTTON -->
+			<div class="buttons">
+				<div>
+					<h1>Buttons</h1>
+					<p class="typo-sm text-light-weight">
+						Buttons provide interactivity to a web application and allows user
+						to perform actions just by a single click
+					</p>
+				</div>
+				<h4>Examples of Primary Button.</h4>
+				<p class="typo-xs">
+					Primary button can also have multiple variants depending upon the
+					action it is being used for.
+				</p>
+				<div class="component-example-container">
+					<button class="margin-trb-16 btn btn-filled-primary">
+						Primary filled
+					</button>
+					<button class="margin-trb-16 btn btn-outline-primary">
+						Primary outline
+					</button>
+					<a href="#" class="icon-btn-primary">
+						<span class="btn icon-alert">
+							<i class="fas fa-shopping-cart"></i>
+						</span>
+					</a>
+					<button class="margin-trb-16 btn btn-filled-primary">
+						<span>
+							<i class="fas fa-shopping-cart"></i>
+							Add to Cart
+						</span>
+					</button>
+					<button class="margin-trb-16 btn btn-filled-primary btn-disabled">
+						Disabled
+					</button>
+				</div>
+				<div class="component-code-snippet-container">
+					<code>
+							<iframe
+								src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%2509%2520%2520%253Cdiv%2520class%253D%2522margin-trb-16%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-icon%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bell%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-status-default%2520badge-status-number%2522%253E2%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522margin-trb-16%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-icon%2520badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-status-default%2520badge-status-number%2522%253E4%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+								style="border: 0; transform: scale(1); overflow: hidden"
+								sandbox="allow-scripts allow-same-origin"
+							>
+							</iframe>
+						</code>
+				</div>
+
+				<h4>Examples of Toggle and Floating Action Button.</h4>
+				<p class="typo-xs">
+					Toggle button can be used to perform actions like switching between
+					light and dark theme.
+					<br />
+					<br />
+					A floating action button (FAB) performs the primary, or most common,
+					action on a screen. It appears in front of all screen content,
+					typically as a circular shape with an icon in its center and at
+					bottom right corner of screen.
+				</p>
+				<div class="component-example-container">
+					<div class="margin-trb-16">
+						<label class="switch">
+							<input type="checkbox" />
+							<span class="slider round"></span>
+						</label>
+					</div>
+					<button class="margin-trb-16 btn btn-filled-primary btn-float-action">
+						<i class="fas fa-plus"></i>
+					</button>
+				</div>
+				<div class="component-code-snippet-container">
+					<code>
+							<iframe
+								src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522margin-trb-16%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522switch%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522slider%2520round%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522margin-trb-16%2520btn%2520btn-filled-primary%2520btn-float-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E"
+								style="border: 0; transform: scale(1); overflow: hidden"
+								sandbox="allow-scripts allow-same-origin"
+							>
+							</iframe>
+						</code>
+				</div>
+			</div>
+
+			<!-- CARDS -->
+			<div id="cards">
+				<div>
+					<h1>Cards</h1>
+					<p class="typo-sm text-light-weight">
+						A card is a flexible and extensible content container. It includes options for headers and footers, a wide
+						variety of content, contextual background colors, and powerful display options.
+					</p>
+				</div>
+				<h4>Example of Horizontal card.</h4>
+				<p class="typo-xs">
+					Primary button can also have multiple variants depending upon the
+					action it is being used for.
+				</p>
+				<div class="component-example-container flex-align-item-end">
+					<div class="horizontal-card default-container margin-trb-16 shadow-box">
+						<div class="image-container badge-container">
+							<img src="./assets/images/product.jpg" loading="lazy" alt="product-image"
+								class="responsive-img image-container" />
+							<span class="badge primary-card-badge">New Arrival</span>
+						</div>
+
+						<div class="card-text-container">
+							<div>
+								<h6 class="text-light-weight">ONEAR 100 HEADPHONES BLACK</h6>
+								<p class="body-typo-sm">
+									Advance Noise Canceling, Ambient Sound, Listening Optimizer
+									<br />
+									<small class="body-typo-xs text-light-weight secondary-text-color">Referende Id:7837A7</small>
+								</p>
+							</div>
+							<div class="text-container-description">
+								<p class="body-typo-md text-medium-weight">
+									These simple and comfortable earphones remain stable in your
+									ear, so you can enjoy your music while jogging, without
+									worrying about your earphones.
+								</p>
+							</div>
+
+							<div class="card-action-btn-container">
+								<button class="margin-trb-16 btn btn-filled-primary">
+									Add to Cart
+								</button>
+								<button class="margin-trb-16 btn btn-outline-primary">
+									Move to Wishlist
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="component-code-snippet-container">
+					<code>
+						<iframe
+						src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522horizontal-card%2520default-container%2520margin-trb-16%2520shadow-box%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522image-container%2520badge-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520src%253D%2522.%252Fassets%252Fimages%252Fproduct.jpg%2522%250A%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522product-image%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522responsive-img%2520image-container%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520primary-card-badge%2522%253ENew%2520Arrival%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-text-container%2522%253E%250A%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Ch6%2520class%253D%2522text-light-weight%2522%253EONEAR%2520100%2520HEADPHONES%2520BLACK%253C%252Fh6%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522body-typo-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Advance%2520Noise%2520Canceling%252C%2520Ambient%2520Sound%252C%2520Listening%2520Optimizer%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbr%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522body-typo-xs%2520text-light-weight%2520secondary-text-color%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Referende%2520Id%253A7837A7%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-container-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522body-typo-md%2520text-medium-weight%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520These%2520simple%2520and%2520comfortable%2520earphones%2520remain%2520stable%2520in%2520your%2520ear%252C%2520so%2520you%250A%2520%2520%2520%2520%2520%2520%2520%2520can%2520enjoy%2520your%2520music%2520while%2520jogging%252C%2520without%2520worrying%2520about%2520your%250A%2520%2520%2520%2520%2520%2520%2520%2520earphones.%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action-btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522margin-trb-16%2520btn%2520btn-filled-primary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522margin-trb-16%2520btn%2520btn-outline-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Move%2520to%2520Wishlist%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+						style="border:0; transform: scale(1); overflow:hidden;"
+						sandbox="allow-scripts allow-same-origin">
+					</iframe>
+						</code>
+				</div>
+
+
+				<!-- vertical cards : card with badge,dismiss,text on cards -->
+				<h4>Examples of Vertical card.</h4>
+				<p class="typo-xs">
+					Below are 3 variations of vertical card. Card with badge, card with dismiss button, card with only text.
+				</p>
+				<div class="component-example-container">
+					<div class="vertical-card flex-column margin-trb-20 shadow-box">
+						<div class="image-container badge-container">
+							<img src="./assets/images/product.jpg" loading="lazy" alt="product-image"
+								class="responsive-img image-container" />
+							<span class="badge primary-card-badge">New Arrival</span>
+						</div>
+
+						<div class="card-text-container">
+							<div>
+								<div class="flex-row flex-align-item-center">
+									<h6 class="text-light-weight">
+										ONEAR 100 HEADPHONES BLACK
+									</h6>
+									<button href="#" class="favorite-btn">
+										<span>
+											<i class="fas fa-heart"></i>
+										</span>
+									</button>
+								</div>
+
+								<p class="body-typo-sm">
+									Advance Noise Canceling, Ambient Sound, Listening Optimizer
+									<br />
+									<small class="body-typo-xs text-light-weight secondary-text-color">Referende Id:7837A7</small>
+								</p>
+							</div>
+							<div class="text-container-description">
+								<p class="body-typo-md text-weight-medium">
+									Rs.1890
+									<span class="text-light-weight"><span class="typo-strike-through">Rs.2099</span><span
+											class="primary-text-color"> 10%</span></span>
+								</p>
+							</div>
+
+							<div class="card-action-btn-container">
+								<button class="margin-trb-16 btn btn-filled-primary">
+									Add to Cart
+								</button>
+								<!-- <button class="margin-trb-16 btn btn-outline-primary">
+										Move to Wishlist
+									</button> -->
+							</div>
+						</div>
+					</div>
+
+					<!-- vertical card with dismiss button -->
+					<div class="vertical-card flex-column margin-trb-20 shadow-box">
+						<div class="image-container badge-container">
+							<img src="./assets/images/product.jpg" loading="lazy" alt="product-image"
+								class="responsive-img image-container" />
+							<span class="badge primary-card-badge">New Arrival</span>
+							<button class="dismiss "><i class="fas fa-times"></i></button>
+						</div>
+
+						<div class="card-text-container">
+							<div>
+								<div class="flex-row flex-align-item-center">
+									<h6 class="text-light-weight">
+										ONEAR 100 HEADPHONES BLACK
+									</h6>
+									<button href="#" class="favorite-btn">
+										<span>
+											<i class="fas fa-heart"></i>
+										</span>
+									</button>
+								</div>
+
+								<p class="body-typo-sm">
+									Advance Noise Canceling, Ambient Sound, Listening Optimizer
+									<br />
+									<small class="body-typo-xs text-light-weight secondary-text-color">Referende Id:7837A7</small>
+								</p>
+							</div>
+							<div class="text-container-description">
+								<p class="body-typo-md text-weight-medium">
+									Rs.1890
+									<span class="text-light-weight"><span class="typo-strike-through">Rs.2099</span><span
+											class="primary-text-color"> 10%</span></span>
+								</p>
+							</div>
+
+							<div class="card-action-btn-container">
+								<button class="margin-trb-16 btn btn-filled-primary">
+									Add to Cart
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- text only card -->
+
+					<div class="vertical-card flex-column margin-trb-20 default-container shadow-box-dark">
+
+
+						<div class="card-text-container">
+							<div>
+								<div class="flex-row flex-align-item-center">
+									<h6 class="text-light-weight">
+										ONEAR 100 HEADPHONES BLACK
+									</h6>
+									<button href="#" class="favorite-btn">
+										<span>
+											<i class="fas fa-heart"></i>
+										</span>
+									</button>
+								</div>
+
+								<p class="body-typo-sm">
+									Advance Noise Canceling, Ambient Sound, Listening Optimizer
+									<br />
+									<small class="body-typo-xs text-light-weight secondary-text-color">Referende Id:7837A7</small>
+								</p>
+							</div>
+							<div class="text-container-description">
+								<p class="body-typo-md text-weight-medium">
+									Rs.1890
+									<span class="text-light-weight"><span class="typo-strike-through">Rs.2099</span><span
+											class="primary-text-color"> 10%</span></span>
+								</p>
+							</div>
+
+							<div class="card-action-btn-container">
+								<button class="margin-trb-16 btn btn-filled-primary">
+									Add to Cart
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="component-code-snippet-container">
+					<code>
+						<iframe
+  						src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%2509%2509%2509%2509%253Cdiv%2520class%253D%2522vertical-card%2520flex-column%2520margin-trb-20%2520shadow-box%2522%253E%250A%2509%2509%2509%2509%2509%2509%253Cdiv%2520class%253D%2522image-container%2520badge-container%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%253Cimg%2520src%253D%2522.%252Fassets%252Fimages%252Fproduct.jpg%2522%2520loading%253D%2522lazy%2522%2520alt%253D%2522product-image%2522%250A%2509%2509%2509%2509%2509%2509%2509%2509class%253D%2522responsive-img%2520image-container%2522%2520%252F%253E%250A%2509%2509%2509%2509%2509%2509%2509%253Cspan%2520class%253D%2522badge%2520primary-card-badge%2522%253ENew%2520Arrival%253C%252Fspan%253E%250A%2509%2509%2509%2509%2509%2509%253C%252Fdiv%253E%250A%250A%2509%2509%2509%2509%2509%2509%253Cdiv%2520class%253D%2522card-text-container%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%253Cdiv%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%253Cdiv%2520class%253D%2522flex-row%2520flex-align-item-center%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%253Ch6%2520class%253D%2522text-light-weight%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509ONEAR%2520100%2520HEADPHONES%2520BLACK%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%253C%252Fh6%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%253Cbutton%2520href%253D%2522%2523%2522%2520class%253D%2522favorite-btn%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%253Cspan%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%253C%252Fspan%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%253C%252Fbutton%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%253C%252Fdiv%253E%250A%250A%2509%2509%2509%2509%2509%2509%2509%2509%253Cp%2520class%253D%2522body-typo-sm%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509Advance%2520Noise%2520Canceling%252C%2520Ambient%2520Sound%252C%2520Listening%2520Optimizer%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%253Cbr%2520%252F%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%253Csmall%2520class%253D%2522body-typo-xs%2520text-light-weight%2520secondary-text-%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509color%2522%253EReferende%2520Id%253A7837A7%253C%252Fsmall%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%253C%252Fp%253E%250A%2509%2509%2509%2509%2509%2509%2509%253C%252Fdiv%253E%250A%2509%2509%2509%2509%2509%2509%2509%253Cdiv%2520class%253D%2522text-container-description%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%253Cp%2520class%253D%2522body-typo-md%2520text-weight-medium%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509Rs.1890%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%253Cspan%2520class%253D%2522text-light-weight%2522%253E%253Cspan%2520class%253D%2522typo-strike-%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509through%2522%253ERs.2099%253C%252Fspan%253E%253Cspan%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509class%253D%2522primary-text-color%2522%253E%252010%2525%253C%252Fspan%253E%253C%252Fspan%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%253C%252Fp%253E%250A%2509%2509%2509%2509%2509%2509%2509%253C%252Fdiv%253E%250A%250A%2509%2509%2509%2509%2509%2509%2509%253Cdiv%2520class%253D%2522card-action-btn-container%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%253Cbutton%2520class%253D%2522margin-trb-16%2520btn%2520btn-filled-primary%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509Add%2520to%2520Cart%250A%2509%2509%2509%2509%2509%2509%2509%2509%253C%252Fbutton%253E%250A%2509%2509%2509%2509%2509%2509%2509%253C%252Fdiv%253E%250A%2509%2509%2509%2509%2509%2509%253C%252Fdiv%253E%250A%2509%2509%2509%2509%2509%253C%252Fdiv%253E%250A%250A%2509%2509%2509%2509%2509%253C%21--%2520vertical%2520card%2520with%2520dismiss%2520button%2520--%253E%250A%2509%2509%2509%2509%2509%253Cdiv%2520class%253D%2522vertical-card%2520flex-column%2520margin-trb-20%2520shadow-box%2522%253E%250A%2509%2509%2509%2509%2509%2509%253Cdiv%2520class%253D%2522image-container%2520badge-container%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%253Cimg%2520src%253D%2522.%252Fassets%252Fimages%252Fproduct.jpg%2522%2520loading%253D%2522lazy%2522%2520alt%253D%2522product-image%2522%250A%2509%2509%2509%2509%2509%2509%2509%2509class%253D%2522responsive-img%2520image-container%2522%2520%252F%253E%250A%2509%2509%2509%2509%2509%2509%2509%253Cspan%2520class%253D%2522badge%2520primary-card-badge%2522%253ENew%2520Arrival%253C%252Fspan%253E%250A%2509%2509%2509%2509%2509%2509%2509%253Cbutton%2520class%253D%2522dismiss%2520%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2509%2509%2509%2509%2509%2509%253C%252Fdiv%253E%250A%250A%2509%2509%2509%2509%2509%2509%253Cdiv%2520class%253D%2522card-text-container%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%253Cdiv%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%253Cdiv%2520class%253D%2522flex-row%2520flex-align-item-cent"
+  						style="width: 1024px; height: 2547px; border:0; transform: scale(1); overflow:hidden;"
+  						sandbox="allow-scripts allow-same-origin">
+							</iframe>
+						</code>
+				</div>
+
+
+				<!-- vertical card with overlay text -->
+				<h4>Example of Vertical card with overlay text.</h4>
+				<p class="typo-xs">
+					To overlay text or any other component ,we need to wrap overlay container(div which needs to be overlaid) and
+					the overlaying component(which overlays) in a single div
+				</p>
+				<div class="component-example-container">
+					<div class="vertical-card flex-column margin-trb-20 shadow-box-dark">
+						<div class="overlay-container">
+
+
+							<div class="image-container badge-container">
+								<img src="./assets/images/product.jpg" loading="lazy" alt="product-image"
+									class="responsive-img image-container" />
+								<span class="badge primary-card-badge">New Arrival</span>
+								<button class="dismiss "><i class="fas fa-times"></i></button>
+							</div>
+
+							<div class="card-text-container">
+								<div>
+									<div class="flex-row flex-align-item-center">
+										<h6 class="text-light-weight">
+											ONEAR 100 HEADPHONES BLACK
+										</h6>
+										<button href="#" class="favorite-btn">
+											<span>
+												<i class="fas fa-heart"></i>
+											</span>
+										</button>
+									</div>
+
+									<p class="body-typo-sm">
+										Advance Noise Canceling, Ambient Sound, Listening Optimizer
+										<br />
+										<small class="body-typo-xs text-light-weight secondary-text-color">Referende Id:7837A7</small>
+									</p>
+								</div>
+								<div class="text-container-description">
+									<p class="body-typo-md text-weight-medium">
+										Rs.1890
+										<span class="text-light-weight"><span class="typo-strike-through">Rs.2099</span><span
+												class="primary-text-color"> 10%</span></span>
+									</p>
+								</div>
+
+								<div class="card-action-btn-container">
+									<button class="margin-trb-16 btn btn-filled-primary">
+										Add to Cart
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="overlaying-component">
+							<div class="text-container typo-md">Out Of Stock</div>
+						</div>
+					</div>
+				</div>
+				<div class="component-code-snippet-container">
+					<code>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=one-light&wt=sharp&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2509%2509%2509%2509%2509%253Cdiv%2520class%253D%2522vertical-card%2520flex-column%2520margin-trb-20%2520shadow-box-dark%2522%253E%250A%2509%2509%2509%2509%2509%2509%253Cdiv%2520class%253D%2522overlay-container%2522%253E%250A%250A%250A%2509%2509%2509%2509%2509%2509%2509%253Cdiv%2520class%253D%2522image-container%2520badge-container%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%253Cimg%2520src%253D%2522.%252Fassets%252Fimages%252Fproduct.jpg%2522%2520loading%253D%2522lazy%2522%2520alt%253D%2522product-image%2522%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509class%253D%2522responsive-img%2520image-container%2522%2520%252F%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%253Cspan%2520class%253D%2522badge%2520primary-card-badge%2522%253ENew%2520Arrival%253C%252Fspan%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%253Cbutton%2520class%253D%2522dismiss%2520%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2509%2509%2509%2509%2509%2509%2509%253C%252Fdiv%253E%250A%250A%2509%2509%2509%2509%2509%2509%2509%253Cdiv%2520class%253D%2522card-text-container%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%253Cdiv%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%253Cdiv%2520class%253D%2522flex-row%2520flex-align-item-center%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%253Ch6%2520class%253D%2522text-light-weight%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509ONEAR%2520100%2520HEADPHONES%2520BLACK%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%253C%252Fh6%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%253Cbutton%2520href%253D%2522%2523%2522%2520class%253D%2522favorite-btn%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%253Cspan%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%253C%252Fspan%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%253C%252Fbutton%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%253C%252Fdiv%253E%250A%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%253Cp%2520class%253D%2522body-typo-sm%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509Advance%2520Noise%2520Canceling%252C%2520Ambient%2520Sound%252C%2520Listening%2520Optimizer%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%253Cbr%2520%252F%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%253Csmall%2520class%253D%2522body-typo-xs%2520text-light-weight%2520secondary-text-%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509color%2522%253EReferende%2520Id%253A7837A7%253C%252Fsmall%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%253C%252Fp%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%253C%252Fdiv%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%253Cdiv%2520class%253D%2522text-container-description%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%253Cp%2520class%253D%2522body-typo-md%2520text-weight-medium%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509Rs.1890%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%253Cspan%2520class%253D%2522text-light-weight%2522%253E%253Cspan%2520class%253D%2522typo-strike-%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509through%2522%253ERs.2099%253C%252Fspan%253E%253Cspan%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509class%253D%2522primary-text-color%2522%253E%252010%2525%253C%252Fspan%253E%253C%252Fspan%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%253C%252Fp%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%253C%252Fdiv%253E%250A%250A%2509%2509%2509%2509%2509%2509%2509%2509%253Cdiv%2520class%253D%2522card-action-btn-container%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%253Cbutton%2520class%253D%2522margin-trb-16%2520btn%2520btn-filled-primary%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%2509Add%2520to%2520Cart%250A%2509%2509%2509%2509%2509%2509%2509%2509%2509%253C%252Fbutton%253E%250A%2509%2509%2509%2509%2509%2509%2509%2509%253C%252Fdiv%253E%250A%2509%2509%2509%2509%2509%2509%2509%253C%252Fdiv%253E%250A%2509%2509%2509%2509%2509%2509%253C%252Fdiv%253E%250A%2509%2509%2509%2509%2509%2509%253Cdiv%2520class%253D%2522overlaying-component%2522%253E%250A%2509%2509%2509%2509%2509%2509%2509%253Cdiv%2520class%253D%2522text-container%2520typo-md%2522%253EOut%2520Of%2520Stock%253C%252Fdiv%253E%250A%2509%2509%2509%2509%2509%2509%253C%252Fdiv%253E%250A%2509%2509%2509%2509%2509%253C%252Fdiv%253E"
+							style="border:0; transform: scale(1); overflow:hidden;"
+							sandbox="allow-scripts allow-same-origin">
+						</iframe>
+						</code>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="./components.js"></script>
+	<script src="./docsite.js"></script>
+</body>
+
 </html>

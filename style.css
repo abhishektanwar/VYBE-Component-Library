@@ -1,6 +1,6 @@
 @import url('./vybe.css');
 :root{
-  --docSite-sec-color:#e6e6e6
+  --docSite-sec-color:#e6e6e6f3;
 }
 
 .color-box{
@@ -34,9 +34,51 @@
 .SecondaryColor{
   color: var(--secondary-color)
 }
-
+.textDarkPrimaryColor{
+  color: var(--dark-primary-color)
+}
 .DarkSecondaryColor{
   color: var(--secondary-color)
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-align-item-center{
+  align-items: center;
+}
+
+.flex-align-item-end{
+  display: flex;
+  align-items: end;
+}
+
+/* image styles */
+
+.responsive-img{
+  height: 100%;
+  width: 100%;
+}
+
+.circular-img{
+  border-radius: 50%;
+}
+
+
+/* margins and paddings global */
+.margin-trb-16{
+  margin: 1.6rem 1.6rem 1.6rem 0;
+}
+
+.margin-trb-20{
+  margin: 2rem 2rem 2rem 0;
 }
 
 /* --primary-color: #1EBAE2;
@@ -53,7 +95,25 @@
 	--bg-color-primary: #fcfcfc;
 	--bg-color-primary-3: #3f3947;*/
 
+/* GRID SKLETON COMPONENTS PAGE */
 
+.main{
+  padding: 1.6rem 4.8rem;
+	grid-area: main;
+	width: 100%;
+	box-sizing: border-box;
+	max-width: 100vw;
+}
+
+.grid-container-skleton{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'header header header header header'
+  'sidebar main main main main'
+  'sidebar main main main main'
+  'sidebar main main main main';
+  margin-bottom: 2.4rem;
+}
 
 .nav-bar {
   background-color: var(--bg-color-primary);
@@ -64,6 +124,10 @@
   box-shadow: 0px 0px 1rem 0.4rem rgb(0 0 0 / 5%);
 }
 
+.shadow-box-dark{
+  box-shadow: 0px 0px 1rem 0.4rem rgb(0 0 0 / 30%);
+}
+
 .shadow-bottom{
   box-shadow: 0 0.4rem 1.2rem 0 rgb(0 0 0 / 5%);
 }
@@ -72,4 +136,19 @@
 .burger .line2,
 .burger .line3 {
 	background-color: var(--secondary-text-color);
+}
+
+@media screen and (max-width:1024px) {
+  body {
+    width: 100vw;
+  }
+
+  .grid-container-skleton{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      'header' 
+      'sidebar' 
+      'main';
+    width: 100%;
+  }
 }
