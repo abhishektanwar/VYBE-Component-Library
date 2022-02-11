@@ -101,7 +101,7 @@
 /* inner circular toggling part */
 .slider:before{
   position: absolute;
-  background-color: #fff;
+  background-color: var(--white-color);
   content: "";
   height: 26px;
   width: 26px;

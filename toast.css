@@ -1,70 +1,89 @@
-/* The snackbar - position it at the bottom and in the middle of the screen */
-
-  .toast{
-    width: fit-content;
-    padding: 1rem 3rem 1rem 1rem ;
-    /* top:1rem; */
-    /* right: 1rem; */
-    background-color: white;
-    color: var(--secondary-text-color);
-    border-radius: 0.3rem;
-    /* display: none; */
-    z-index: var(--z-index-5);
-	/* visibility: hidden; Hidden by default. Visible on click */
-  
-  
+.toast {
+  width: fit-content;
+  padding: 1rem 3rem 1rem 1rem;
+  background-color: white;
+  color: var(--secondary-text-color);
+  border-radius: 0.3rem;
+  z-index: var(--z-index-5);
 }
 
-.toast-cancel-btn{
-	margin-left: 3rem;
+.toast-cancel-btn {
+  margin-left: 3rem;
 }
-.target-toast{
-	display: none;
-}
-.toast-success{
-    background-color: #84f1c9;
-    color: #1b7052;
-}
-.toast-error{
-    color: #dc3545;
-    background-color: #fcc5c5;
-}
-.toast-inform{
-    background-color: #7FD2E6;
-    color: #29438b;
-}
-  
-  /* Show the snackbar when clicking on a button (class added with JavaScript) */
-  .show {
-	visibility: visible; /* Show the snackbar */
-	    position: fixed;
 
-	left: 50%; /* Center the snackbar */
-  bottom: 30px; /* 30px from the bottom */
-	display: block;
-	/* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+.target-toast {
+  display: none;
+}
+
+.toast-success {
+  background-color: var(--toast-success-background-color);
+  color: var(--toast-success-color);
+}
+
+.toast-error {
+  background-color: var(--toast-error-background-color);
+  color: var(--toast-error-color);
+}
+
+.toast-inform {
+  background-color: var(--toast-inform-background-color);
+  color: var(--toast-inform-color);
+}
+
+.show {
+  visibility: visible; /* Show the snackbar */
+  position: fixed;
+
+  left: 50%; /* Center the snackbar */
+  bottom: 30px;
+  display: block;
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
 	However, delay the fade out process for 2.5 seconds */
-	-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-	animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
   }
-  
-  /* Animations to fade the snackbar in and out */
-  @-webkit-keyframes fadein {
-	from {bottom: 0; opacity: 0;}
-	to {bottom: 30px; opacity: 1;}
+  to {
+    bottom: 30px;
+    opacity: 1;
   }
-  
-  @keyframes fadein {
-	from {bottom: 0; opacity: 0;}
-	to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
   }
-  
-  @-webkit-keyframes fadeout {
-	from {bottom: 30px; opacity: 1;}
-	to {bottom: 0; opacity: 0;}
+  to {
+    bottom: 30px;
+    opacity: 1;
   }
-  
-  @keyframes fadeout {
-	from {bottom: 30px; opacity: 1;}
-	to {bottom: 0; opacity: 0;}
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
   }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}

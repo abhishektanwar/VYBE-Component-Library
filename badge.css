@@ -28,9 +28,11 @@
 .badge-status-online{
   background-color: var(--success-dark-color);
 }
+
 .badge-status-offline{
   background-color: var(--danger-dark-color);
 }
+
 .badge-status-away{
   background-color: var(--secondary-text-color);
 }
@@ -70,6 +72,7 @@
   width: 2rem;
   
 }
+
 .badge-icon i{
   font-size: 5rem;
 }
