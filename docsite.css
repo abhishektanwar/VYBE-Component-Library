@@ -80,16 +80,15 @@
 	width: 100%;
 	max-height: 30rem;
 	padding: 1.6rem 0;
-	background-color: #FAFAFA;
+	background-color: var(--white-color);
 	margin: 3.2rem 0;
 	overflow: auto;
 }
+
 .component-code-snippet-container iframe{
 	width: 100%;
 	border: none;
 }
-
-
 
 @media screen and (max-width:1024px) {
 

@@ -59,7 +59,11 @@ html{
 	--secondary-dark-color:#383d41;
 	--secondary-light-color:#e2e3e5;
 	--secondary-border-color:#d6d8db;
-
+	--light-border-color:rgba(153, 151, 151, 0.938);
+	--white-color:#fff;
+	--black-color:#000;
+	--password-color:#413e3e;
+	--password-background-color:#f3eaf3;
 }
 body{
   color: var(--body-text-color);

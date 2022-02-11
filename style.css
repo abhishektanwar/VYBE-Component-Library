@@ -12,12 +12,15 @@
 .bgPrimaryColor{
   background-color: var(--primary-color)
 }
+
 .bgLightPrimaryColor{
   background-color: var(--light-primary-color)
 }
+
 .bgDarkPrimaryColor{
   background-color: var(--dark-primary-color)
 }
+
 .bgSecondaryColor{
   color: var(--secondary-color)
 }
@@ -25,18 +28,23 @@
 .bgDarkSecondaryColor{
   background-color: var(--secondary-color)
 }
+
 .textSecondaryTextColor{
   color: var(--secondary-text-color)
 }
+
 .textDarkSecondaryTextColor{
   color: var(--dark-secondary-text-color)
 }
+
 .SecondaryColor{
   color: var(--secondary-color)
 }
+
 .textDarkPrimaryColor{
   color: var(--dark-primary-color)
 }
+
 .DarkSecondaryColor{
   color: var(--secondary-color)
 }
@@ -58,6 +66,7 @@
 .flex-justify-content-center{
   justify-content: center;
 }
+
 .flex-align-item-end{
   display: flex;
   align-items: end;

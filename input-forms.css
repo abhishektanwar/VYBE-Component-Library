@@ -45,7 +45,7 @@
 }
 
 .form-field.disabled-field:hover{
-	border: 1px solid black;
+	border: 1px solid var(--black-color);
 }
 
 .plain-read-only{
@@ -71,8 +71,8 @@
 
 .pwd-format {
 	position: relative;
-	color: rgb(65, 62, 62);
-	background: rgb(243, 234, 243);
+	color: var(--password-color);
+	background: var(--password-background-color);
 	font-size: 11px;
 	width: 15rem;
 	padding: 0.5rem;
