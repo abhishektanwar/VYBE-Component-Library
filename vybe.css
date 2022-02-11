@@ -64,7 +64,14 @@ html{
 	--black-color:#000;
 	--password-color:#413e3e;
 	--password-background-color:#f3eaf3;
+	--toast-success-background-color: #84f1c9;
+	--toast-success-color: #1b7052;
+	--toast-error-background-color: #fcc5c5;
+	--toast-error-color: #dc3545;
+	--toast-inform-background-color: #7FD2E6;
+	--toast-inform-color: #29438b;
 }
+
 body{
   color: var(--body-text-color);
 }
