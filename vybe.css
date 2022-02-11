@@ -44,6 +44,9 @@ html{
 	--z-index-4: 4;
 	--z-index-5: 5;
 	--z-index-6: 6;
+	--primary-dark-color:#004085;
+	--primary-light-color:#cce5ff;
+	--primary-border-color:#b8daff;
 	--danger-dark-color:#721c24;
 	--danger-light-color:#f8d7da;
 	--danger-border-color:#f5c6cb;
@@ -53,6 +56,9 @@ html{
 	--warning-dark-color:#856404;
 	--warning-light-color:#fff3cd;
 	--warning-border-color:#ffeeba;
+	--secondary-dark-color:#383d41;
+	--secondary-light-color:#e2e3e5;
+	--secondary-border-color:#d6d8db;
 	--light-border-color:rgba(153, 151, 151, 0.938);
 	--white-color:#fff;
 	--black-color:#000;

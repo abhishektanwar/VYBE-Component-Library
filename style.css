@@ -88,6 +88,9 @@
   border-radius: 50%;
 }
 
+.margin-top-60{
+  margin-top: 6rem;
+}
 
 /* margins and paddings global */
 .margin-trb-16{
@@ -161,5 +164,6 @@
       'sidebar' 
       'main';
     width: 100%;
+    overflow-x: hidden;
   }
 }
