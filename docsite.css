@@ -90,6 +90,23 @@
 	border: none;
 }
 
+.footer-container{
+	background-color: var(--dark-primary-color);
+	height: 18rem;
+}
+
+.footer-container i{
+	color: var(--toast-error-color);
+}
+
+.footer-container h3{
+	color: var(--white-color);
+}
+
+.margin-top-20{
+	margin-top: 20px;
+}
+
 @media screen and (max-width:1024px) {
 
 	/* SIDEBAR */
