@@ -21,10 +21,14 @@
 		<nav class="nav-bar shadow-box" id="my-nav-bar">
 			<div class="nav-section">
 				<!-- hamburger menu -->
-				<div class="burger nav-section-items">
-					<div class="line1"></div>
+				<div id="hamburger-menu-icon" class="hamburger nav-section-items">
+					<!-- <div class="line1"></div>
 					<div class="line2"></div>
-					<div class="line3"></div>
+					<div class="line3"></div> -->
+					<span >
+						<i class="fas fa-bars font-size-24"></i>
+					</span>
+					
 				</div>
 
 				<!-- LOGO -->
@@ -34,8 +38,10 @@
 					</a>
 				</div>
 				<ul class="nav-bar-links list-style-none nav-section-items">
-					<li class="list-inline-item avatar-in-nav-links">
+					<li class="list-inline-item avatar-in-nav-links flex-row flex-align-item-center flex-justify-content-space-between">
 						<div class="primary-text-color logo-title">VYBE UI</div>
+						<span id="close-mobile-nav" ><i class="fas fa-times font-size-24"></i></span>
+
 					</li>
 					<li class="list-inline-item">
 						<a href="./index.html" class="link-no-style nav-section-link">HOME</a>
@@ -71,6 +77,13 @@
 							</span>
 						</a>
 					</li>
+					<li class="list-inline-item">
+						<span class="nav-icon-link link-no-style">
+							<span class="nav-icon">
+								<i class="fas fa-moon font-size-24" id="theme-toggle-btn"></i>
+							</span>
+						</span>
+					</li>
 				</ul>
 			</div>
 		</nav>
@@ -78,24 +91,24 @@
 		<!-- SIDEBAR -->
 		<div class="sidebar grid-item shadow-bottom" id="my-side-bar">
 			<div class="sidebar-toggle-button">
-				<h2 class="typo-sm sidebar-title">Components</h2>
+				<h2 class="typo-sm sidebar-title typo-lg">Components</h2>
 				<span class="sidebar-toggle-down-arrow"><i class="typo-sm fas fa-chevron-down"></i></span>
 			</div>
 			<ul class="nav-links">
-				<li class="nav-link-item font-size-16"><a href="#Alerts">Alert</a></li>
-          <li class="nav-link-item font-size-16"><a href="#Avatar">Avatar</a></li>
-          <li class="nav-link-item font-size-16"><a href="#badge">Badge</a></li>
-          <li class="nav-link-item font-size-16"><a href="#buttons">Button</a></li>
-          <li class="nav-link-item font-size-16"><a href="#cards">Cards</a></li>
-          <li class="nav-link-item font-size-16"><a href="#forms">Input</a></li>
-          <li class="nav-link-item font-size-16"><a href="#responsive-images">Image</a></li>
-          <li class="nav-link-item font-size-16"><a href="#ratings">Ratings</a></li>
-          <li class="nav-link-item font-size-16"><a href="#typography">Typography</a></li>
-          <li class="nav-link-item font-size-16"><a href="#lists">List</a></li>
-          <li class="nav-link-item font-size-16"><a href="#navigation">Navigation</a></li>
-          <li class="nav-link-item font-size-16"><a href="#modals">Modal</a></li>
-          <li class="nav-link-item font-size-16"><a href="#toast">Toast</a></li>
-          <li class="nav-link-item font-size-16"><a href="#simplified-grid">Grid</a></li>
+				<li class="nav-link-item font-size-16"><a class="typo-sm" href="#Alerts">Alert</a></li>
+          <li class="nav-link-item font-size-16"><a class="typo-sm" href="#Avatar">Avatar</a></li>
+          <li class="nav-link-item font-size-16"><a class="typo-sm" href="#badge">Badge</a></li>
+          <li class="nav-link-item font-size-16"><a class="typo-sm" href="#buttons">Button</a></li>
+          <li class="nav-link-item font-size-16"><a class="typo-sm" href="#cards">Cards</a></li>
+          <li class="nav-link-item font-size-16"><a class="typo-sm" href="#forms">Input</a></li>
+          <li class="nav-link-item font-size-16"><a class="typo-sm" href="#responsive-images">Image</a></li>
+          <li class="nav-link-item font-size-16"><a class="typo-sm" href="#ratings">Ratings</a></li>
+          <li class="nav-link-item font-size-16"><a class="typo-sm" href="#typography">Typography</a></li>
+          <li class="nav-link-item font-size-16"><a class="typo-sm" href="#lists">List</a></li>
+          <li class="nav-link-item font-size-16"><a class="typo-sm" href="#navigation">Navigation</a></li>
+          <li class="nav-link-item font-size-16"><a class="typo-sm" href="#modals">Modal</a></li>
+          <li class="nav-link-item font-size-16"><a class="typo-sm" href="#toast">Toast</a></li>
+          <li class="nav-link-item font-size-16"><a class="typo-sm" href="#simplified-grid">Grid</a></li>
 			</ul>
 		</div>
 		<section class="main grid-item">
@@ -114,7 +127,7 @@
 					dismiss button.Alerts are available in five different variants
 					(primary,success,danger,warning,secondary) For proper styling, use
 					one of the five required contextual classes (e.g.,
-					<span class="textDarkPrimaryColor">.success-alert</span>).
+					<span class="textPrimaryColor">.success-alert</span>).
 				</p>
 				<div class="component-example-container flex-column shadow-bottom">
 					<!-- example container div ^ -->
@@ -200,8 +213,8 @@
 				<p class="typo-xs">
 					Avatars with image are available in four different variants based on
 					size
-					<span class="textDarkPrimaryColor">large, medium, small, extra-small</span>
-					(e.g., <span class="textDarkPrimaryColor">.avatar-lg</span>).
+					<span class="textPrimaryColor">large, medium, small, extra-small</span>
+					(e.g., <span class="textPrimaryColor">.avatar-lg</span>).
 				</p>
 				<div class="component-example-container">
 					<div class="avatar avatar-xs margin-trb-16">
@@ -232,9 +245,9 @@
 				<p class="typo-xs">
 					Avatars with text are available in four different variants based on
 					size
-					<span class="textDarkPrimaryColor">large, medium, small, extra-small</span>. Use <span
-						class="textDarkPrimaryColor">avatar-text</span> class
-					here. (e.g., <span class="textDarkPrimaryColor">.avatar-lg</span>).
+					<span class="textPrimaryColor">large, medium, small, extra-small</span>. Use <span
+						class="textPrimaryColor">avatar-text</span> class
+					here. (e.g., <span class="textPrimaryColor">.avatar-lg</span>).
 				</p>
 				<div class="component-example-container flex-align-item-end">
 					<div class="avatar avatar-xs avatar-text" role="img" alt="avatar">
@@ -727,8 +740,8 @@
 				</div>
 				<h4>Example of Active fields.</h4>
 				<p class="typo-xs">
-					Add <span class="textDarkPrimaryColor">required-field</span> class with label tag to show * with the label, if
-					the corresponding field is required and <span class="textDarkPrimaryColor">required</span> attribute to the
+					Add <span class="textPrimaryColor">required-field</span> class with label tag to show * with the label, if
+					the corresponding field is required and <span class="textPrimaryColor">required</span> attribute to the
 					corresponding input field.
 				</p>
 				<div class="component-example-container">
@@ -759,8 +772,8 @@
 
 				</p>
 				<p class="typo-xs">
-					Add <span class="textDarkPrimaryColor">disabled-field</span> class to style it like a disabled field and <span
-						class="textDarkPrimaryColor">disabled</span> boolean attribute to the corresponding input field.
+					Add <span class="textPrimaryColor">disabled-field</span> class to style it like a disabled field and <span
+						class="textPrimaryColor">disabled</span> boolean attribute to the corresponding input field.
 				</p>
 				<div class="component-example-container">
 					<div class="flex-column form-field-container">
@@ -847,7 +860,7 @@
 				<h4>Example of Responsive image</h4>
 				<p class="typo-xs">
 
-					Add <span class="textDarkPrimaryColor">responsive-img</span> to fit the image according to its parent's width
+					Add <span class="textPrimaryColor">responsive-img</span> to fit the image according to its parent's width
 				</p>
 				<div class="component-example-container">
 					<img src="./assets/images/sample1.jpg" alt="avatar" loading="lazy" class="responsive-img" />
@@ -864,7 +877,7 @@
 				<h4>Example of Round image</h4>
 				<p class="typo-xs">
 
-					Add <span class="textDarkPrimaryColor">circular-img</span> to get a circular image
+					Add <span class="textPrimaryColor">circular-img</span> to get a circular image
 				</p>
 				<div class="component-example-container">
 					<div class="avatar avatar-lg">
@@ -946,7 +959,7 @@
 				<p class="typo-xs">
 
 					Directly h1,h2,h3,h4,h5,h6 tags could be used or class <span
-						class="textDarkPrimaryColor">h1,h2,h3,h4,h5,h6</span> can be applied to get the required font size
+						class="textPrimaryColor">h1,h2,h3,h4,h5,h6</span> can be applied to get the required font size
 				</p>
 				<div class="component-example-container flex-column">
 					<h1>This is headding - H1</h1>
@@ -968,7 +981,7 @@
 				<!-- small text -->
 				<h4>Example of Body text</h4>
 				<p class="typo-xs">
-					Any of the classes from <span class="textDarkPrimaryColor">body-typo-xs, body-typo-md, body-typo-lg,
+					Any of the classes from <span class="textPrimaryColor">body-typo-xs, body-typo-md, body-typo-lg,
 						typo-lg</span> can be applied to p tag to get required styles.
 				</p>
 				<div class="component-example-container flex-column">
@@ -1024,13 +1037,13 @@
 					Add classes according to the type of bullet required . Check HTML code below.
 				</p>
 				<div class="component-example-container">
-					<div class="flex-row">
+					<div class="flex-row flex-justify-content-space-between width100pc">
 						<ul class="mb-1 list-container shadow-box">
 							<li class="body-typo-md">Default list style item1</li>
 							<li class="body-typo-md">Default list style item2</li>
 							<li class="body-typo-md">Default list style item3</li>
 						</ul>
-						<ul class="mb-1 list-container shadow-box list-style-square ">
+						<ul class="mb-1 list-container shadow-box list-style-square">
 							<li class="body-typo-md">Square list style item1</li>
 							<li class="body-typo-md">Square list style item2</li>
 							<li class="body-typo-md">Square list style item3</li>
@@ -1058,7 +1071,7 @@
 					Add classes according to the type of bullet required . Check HTML code below.
 				</p>
 				<div class="component-example-container">
-					<div class="flex-row">
+					<div class="flex-row flex-justify-content-space-between width100pc">
 						<ol class="mb-1 list-container shadow-box">
 							<li class="body-typo-md">Numbered list style item1</li>
 							<li class="body-typo-md">Numbered list style item2</li>
@@ -1100,7 +1113,7 @@
 				<p class="typo-xs">
 					This is a stacked list of notifications. Any content can be added to li tag.
 				</p>
-				<div class="component-example-container flex-row flex-justify-content-center stacked-notification-container">
+				<div class="component-example-container flex-row flex-justify-content-center width100pc">
 					<div class="stacked-notification-list list-container">
 						<ul class="list-style-none">
 							<li class="flex-row stacked-notification-list-item margin-trb-16">
@@ -1322,11 +1335,11 @@
 					snackbar by introducing an action button.
 				</p>
 				<div class="component-example-container">
-					<div class="toast toast-success margin-trb-16">
+					<div class="toast toast-success margin-trb-16 typo-sm text-light-weight">
 						Changes saved successfully.
 						<span><i class="fas fa-times toast-cancel-btn"></i></span>
 					</div>
-					<div class="toast toast-error">
+					<div class="toast toast-error typo-sm text-light-weight">
 						Something went wrong. Please try again later!
 						<span><i class="fas fa-times toast-cancel-btn"></i></span>
 					</div>
@@ -1346,7 +1359,7 @@
 					Click the button below to show the toast. Check the JavaScript code below to achieve this functionality.
 				</p>
 				<div class="component-example-container">
-					<div id="toast-target" class=" toast target-toast toast-success margin-trb-16">
+					<div id="toast-target" class=" toast target-toast toast-success margin-trb-16 typo-sm text-light-weight">
 						Changes saved successfully.
 						<span><i class="fas fa-times toast-cancel-btn"></i></span>
 					</div>
@@ -1487,6 +1500,7 @@
 			</ul>
 		</div>
 	</footer>
+	<script src="theme.js"></script>
 	<script src="./components.js"></script>
 	<script src="./docsite.js"></script>
 </body>

@@ -13,7 +13,7 @@
 
 .list-container{
   border-radius: 0.3rem;
-  background-color: #f7f5f5;
+  background-color: var(--bg-color-primary);
   padding: 1rem 32px 1rem 40px;
 }
 
@@ -41,7 +41,7 @@
 .stacked-notification-list{
   width: 70%;
   border-radius: 3px;
-  background-color: #f7f5f5;
+  background-color: var(--bg-color-primary);
 }
 .component-example-container .stacked-notification-list{
   justify-content: center;
@@ -64,5 +64,9 @@
 }
 
 .stacked-notification-container{
+  width: 100%;
+}
+
+.width100pc{
   width: 100%;
 }

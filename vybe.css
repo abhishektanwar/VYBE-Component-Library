@@ -72,10 +72,30 @@ html{
 	--toast-inform-color: #29438b;
 	--border-color:rgba(88, 85, 85, 0.384);
 	--grey-background-color:rgba(224, 224, 224, 0.31);
+	--bg-color:rgba(255, 255, 255, 0.87);
+	--bg-color-secondary:#1212127e;
+	--box-shadow:0,0,0;
+	--mobile-nav-bg-color:#cce5ff
+}
+
+html[vybe-ui-theme='light']{
+	
+}
+
+html[vybe-ui-theme='dark']{
+	--bg-color:#121212;
+	--bg-color-primary:#807e7e7e;
+	--body-text-color:rgba(240, 231, 231, 0.829);
+	--dark-primary-color:#807e7e7e;
+	--label-color:var(--body-text-color);
+	--box-shadow:255,255,255;
+	--mobile-nav-bg-color:var(--bg-color)
+
 }
 
 body{
   color: var(--body-text-color);
+  background-color: var(--bg-color);
 }
 
 .font-size-24{
