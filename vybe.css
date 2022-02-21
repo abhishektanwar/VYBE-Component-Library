@@ -1,17 +1,17 @@
-@import url('./navigation.css');
-@import url('./button.css');
+@import url('./CSS/navigation.css');
+@import url('./CSS/button.css');
 @import url('./docsite.css');
-@import url('./typo.css');
-@import url('./lists.css');
-@import url('./alerts.css');
-@import url('./avatar.css');
-@import url('./badge.css');
-@import url('./cards.css');
-@import url('./input-forms.css');
-@import url('./ratings.css');
-@import url('./modal.css');
-@import url('./toast.css');
-@import url('./grids.css');
+@import url('./CSS/typo.css');
+@import url('./CSS/lists.css');
+@import url('./CSS/alerts.css');
+@import url('./CSS/avatar.css');
+@import url('./CSS/badge.css');
+@import url('./CSS/cards.css');
+@import url('./CSS/input-forms.css');
+@import url('./CSS/ratings.css');
+@import url('./CSS/modal.css');
+@import url('./CSS/toast.css');
+@import url('./CSS/grids.css');
 *{
   margin: 0;
 }
