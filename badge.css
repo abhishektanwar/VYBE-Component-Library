@@ -22,7 +22,7 @@
 }
 
 .primary-card-badge{
-  background-color: var(--dark-primary-color);
+  background-color: var(--primary-color);
 }
 
 .badge-status-online{

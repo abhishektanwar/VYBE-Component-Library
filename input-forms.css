@@ -51,7 +51,7 @@
 .plain-read-only{
 	border: none;
 	background-color: transparent;
-	color: rgba(27, 27, 27, 0.877);
+	color: var(--body-text-color);
 }
 
 .plain-read-only:hover{

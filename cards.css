@@ -1,14 +1,17 @@
 .horizontal-card{
   border-radius: 0.48rem;
-  color: rgb(51, 48, 49);
+  color: var(--body-text-color);
   box-sizing: border-box;
   display: flex;
+  background-color: var(--bg-color-primary);
 }
 
 .vertical-card{
   max-width: 220px;
   width: 100%;
   position: relative;
+  background-color: var(--bg-color-primary);
+
 }
 
 .horizontal-card .image-container{
@@ -79,9 +82,10 @@
   align-items: center;
   padding: 1rem;
   background-color: rgb(234, 234, 236,0.6);
+  /* background-color: var(--bg-color-primary); */
 }
 
 .overlaying-component .text-container{
-  background-color: white;
+  background-color: var(--bg-color);
 }
 

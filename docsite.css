@@ -18,7 +18,8 @@
 	transition: 0.2s ease;
 }
 #my-nav-bar a:hover,
-#my-nav-bar a:hover i {
+#my-nav-bar a:hover i,
+#my-side-bar a:hover {
 	color: var(--primary-color);
 }
 
@@ -95,7 +96,7 @@
 	height: 18rem;
 }
 
-.footer-container i{
+.footer-container .fa-heart{
 	color: var(--toast-error-color);
 }
 
@@ -116,6 +117,7 @@
 		height: 5.6rem;
 		z-index: var(--z-index-2);
 		background-color: var(--docSite-sec-color);
+		color: var(--black-color);
 	}
 
 	.sidebar-toggle-button {
